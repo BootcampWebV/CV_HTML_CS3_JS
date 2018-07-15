@@ -6,32 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacto</title>
-    <link rel="stylesheet" href="./style/newstyle.css">
     <link rel="stylesheet" href="./style/contacto.css">
+    <link rel="stylesheet" href="./style/newstyle.css">
+
     
     
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Merienda+One" rel="stylesheet">
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>
-    
-    <script>
-        function initialize() {
-            var myLatLng = { lat: 42.762480, lng: -83.283406 };
-
-            var mapProp = {
-                center: myLatLng,
-                zoom: 15,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Aqui estamos'
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+   
 </head>
 
 <body>
@@ -43,22 +24,18 @@
             <il class="navbar_item"><a href="index.html#sobre_mi" class="smooth">Sobre mí</a></il>
             <il class="navbar_item navbar_item--active"><a href="#" name="contacto" >Contacto</a></il>
         </ul>
-        <div class="header_image"> <!--si meto div entro nav tengo la foto en el menu-->
-            <a href="imagen"><img src="images/yo.png" alt="Mifoto"></a>
-        </div>
-</nav>
-<main class="container">
-    <section class="section-container">
-        
-        <div class="row">
-            <div class="col-6">
-                <div id="googleMap">
 
-                </div>
-            </div>
+</nav>
+
+<main class="container">
+        
+          <img id="image_contact" src="./images/contact.jpg" alt="contacto">
+         
+    <section class="section-container">
+         <div class="form">
             <div class="col-6">
               <div class="form-row">
-                <div class="form" name= "contacto"><h2 class="contact_h2">Contacta con nosotros</h2>
+                <div name= "contacto"><h2 class="contact_h2">Contacta con nosotros</h2>
                     <form name="contacto" method="get" novalidate>
                         <div class="form-row">
                             <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
@@ -83,7 +60,7 @@
                         
                         <div class="form-row">
                             <label for="comentario">Comentario</label>
-                            <input type="textarea" id="comentario" textarea maxlength="150" onkeyup="palabras" name="comentario"  required>
+                            <input type="textarea" id="comentario" maxlength="150"  name="comentario"  required>
                         </div>
                         <div class="form-row">
                             <button type="submit" id="enviar">Enviar</button>
@@ -95,13 +72,13 @@
         </div>
     </section>
 </main>
-<footer class="footer row-flex">
-    Javier Bautista &copy; 2018</footer>
+<footer class="footer row-flex" id="footer_name">
+    Javier Bautista &copy; 2018
+</footer>
 
 <script src="./scripts/notifications.js"></script>
-<script src="scripts/form.js"></script>
-
 <script src="./scripts/ajax.js"></script>
+<script src="scripts/form.js"></script>
 </body>
 
 </html>

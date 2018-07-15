@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curriculum Vitae Javier Bautista</title>
+    <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/newstyle.css">
     <link rel="stylesheet" href="./style/grid.css">
     
@@ -30,22 +31,24 @@
                     <il class="navbar_item"><a href="#sobre_mi" class="smooth">Sobre mí</a></il>
                     <il class="navbar_item"><a href="contacto.html" name="contacto" id="#contacto">Contacto</a></il>
                 </ul>
-                <div class="header_image"> <!--si meto div dentro nav tengo la foto en el menu-->
-                    <a href="imagen"><img src="images/yo.png" alt="Mifoto"></a>
-                </div>
+                
     </nav>
     <main id="container" class="contenido">
             <section id="quien_soy" class="who-I-am">
                 <div id="quien_soy_text" class="quiensoy-info clearfix">
                    <header class="header" name="header"><h2 id="text_name" class="texto_nombre">Javier Bautista <br><span class="text_name_sub">Curriculum Vitae</span></h2>
                 </header>
+ 
                    <img id="imagenportada" class="portadaimagen" src="images/blueorange.jpg" alt="Foto de portada">
-
+                   <div class="header_image" id="texto-info-quiensoy"> <!--si meto div dentro nav tengo la foto en el menu-->
+                    <a href="imagen"><img src="images/yo.png" alt="Mifoto"></a>
+                
                         <span id="text_info">Soy un chico de Granollers (Barcelona) de 33 años, que pasa la mitad del año viviendo en Barcelona y la otra mitad disfrutando de Ibiza, es en esta ultima en donde busco desconectar y relajarme.
                             Aficionado a la fotografía siempre intento retratar lo que me enamora de los lugares que visito. 
                             También soy un hombre de retos y es ahora cuando he visto un gran reto ante mí en la programación web. Así que, mí meta es, convertirme en un gran programador y ahora llegó el momento de empezar a mí aventura.
                             Mí aventura comienza aquí... 
-                            </span>         
+                            </span>
+                    </div>         
                 </div>   
             </section> 
             
@@ -96,13 +99,14 @@
     
     <footer class="footer row-flex">
         Javier Bautista &copy; 2018
-        </footer>
+    </footer>
 
     <script src="./jquery/scroll.js"></script>
-    <script src="./scripts/notifications.js"></script>
-    <script src="./scripts/form.js"></script>
     <script src="./scripts/menu.js"></script>
-    <script src="./scripts/ajax.js"></script>
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/notifications.js"></script>
+    
+   
  
 </body>
 

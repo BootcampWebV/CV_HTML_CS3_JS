@@ -1,0 +1,47 @@
+@font-face { src: url("../fonts/BubblegumSans-Regular.ttf"); font-family: Bubblegum Sans;}
+
+
+#image_contact{
+
+  height:50%;
+  width: 100%;
+}
+.col-6 #contacta_nosotros {text-align: center;}
+.form {
+  margin-top:-600px;
+  padding: 0 15rem;
+  margin-left:50px;
+  margin-bottom:200px;
+}
+
+.form .form-row {
+  padding: 0.8rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  padding: 1rem 4rem;
+  border: none;
+  color: white;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.5;
+}
+
+footer{
+  background-color:black;
+  position:relative;
+}
+
+#comentario{
+  height: 100px;
+  width: 300px;
+}
